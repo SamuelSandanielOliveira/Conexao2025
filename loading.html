@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loading — Dead by Daylight</title>
+<link rel="stylesheet" href="loading.css">
+</head>
+<body>
+
+<div class="loading-screen">
+  <div class="loading-bg"></div>
+
+  <div class="loading-content">
+    <div class="logo"></div>
+
+    <div class="progress-container">
+      <div class="progress-bar"></div>
+    </div>
+
+    <div class="tip">💀 Dica: Ficar muito tempo no mesmo lugar pode ser fatal.</div>
+  </div>
+</div>
+
+<script>
+  // Lista de dicas — você pode adicionar mais
+  const tips = [
+    "💀 Dica: Ficar muito tempo no mesmo lugar pode ser fatal.",
+    "🔪 Dica: Ouvindo atentamente, você pode prever ataques.",
+    "🩸 Dica: Sobreviventes feridos deixam rastros mais visíveis.",
+    "🕯️ Dica: Use a escuridão a seu favor."
+  ];
+  
+  const tipElement = document.querySelector(".tip");
+  tipElement.textContent = tips[Math.floor(Math.random() * tips.length)];
+
+  // Simulação de carregamento
+  let progress = 0;
+  const bar = document.querySelector(".progress-bar");
+  const loadingInterval = setInterval(() => {
+    progress += 2;
+    bar.style.width = progress + "%";
+    if (progress >= 100) clearInterval(loadingInterval);
+  }, 100);
+</script>
+
+</body>
+</html>

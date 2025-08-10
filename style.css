@@ -1,3 +1,155 @@
+:root{
+  --bg-900: #050306;
+  --bg-800: #0d0b10;
+  --muted: #9aa0a6;
+  --accent: #d33b3b; /* vermelho sangue */
+  --accent-2: #6df0ff; /* ciano neon */
+  --glass: rgba(255,255,255,0.04);
+  --card-bg: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.25));
+  --radius: 14px;
+  --max-width: 1200px;
+  --font-main: "Roboto", system-ui, sans-serif;
+  --font-display: "Orbitron", sans-serif;
+}
+
+/* === Reset simples === */
+*{box-sizing:border-box}
+html,body{height:100%}
 body{
-    
+  margin:0;
+  font-family:var(--font-main);
+  background:
+    radial-gradient(ellipse at 10% 10%, rgba(109,240,255,0.03) 0%, transparent 18%),
+    linear-gradient(180deg, var(--bg-900) 0%, var(--bg-800) 100%);
+  color:#e6e6e6;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.45;
+  background-attachment:fixed;
+}
+
+/* Custom scrollbar (WebKit) */
+::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar-thumb{
+  background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  border-radius:10px;
+  border:1px solid rgba(255,255,255,0.03);
+}
+
+/* === Header === */
+.site-header{
+  position:sticky; top:0; z-index:40;
+  display:flex; align-items:center; justify-content:space-between;
+  padding:14px 24px; max-width:var(--max-width); margin:14px auto;
+  backdrop-filter: blur(6px);
+  background: linear-gradient(180deg, rgba(0,0,0,0.25), rgba(0,0,0,0.12));
+  border-radius:12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.65);
+}
+.logo{font-family:var(--font-display); letter-spacing:2px; font-weight:700; font-size:18px}
+.logo .accent{color:var(--accent); margin-left:6px}
+.nav a{color:var(--muted); margin-left:18px; text-decoration:none; font-weight:500}
+.nav a:hover{color:var(--accent-2); text-shadow:0 0 8px rgba(109,240,255,0.06)}
+
+/* === Hero === */
+.hero{
+  margin: 18px auto; max-width:var(--max-width);
+  height:380px; border-radius:18px; overflow:hidden; position:relative;
+  display:flex; align-items:center; justify-content:flex-start;
+  background-image: url('hero-bg.jpg'); /* substitua com sua arte */
+  background-size:cover; background-position:center;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.7);
+}
+.hero-inner{
+  padding:40px; width:60%; background: linear-gradient(90deg, rgba(0,0,0,0.45), transparent);
+}
+.hero p{color:var(--muted); margin-top:12px; max-width:60%}
+.cta-row{margin-top:18px}
+.btn{
+  display:inline-block; padding:10px 16px; border-radius:10px; text-decoration:none;
+  font-weight:600; margin-right:10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+}
+.btn.primary{
+  background: linear-gradient(90deg, rgba(211,59,59,0.95), rgba(150,30,30,0.95));
+  color:white;
+  border:1px solid rgba(255,255,255,0.06);
+}
+.btn.ghost{
+  background:transparent; color:var(--muted); border:1px solid rgba(255,255,255,0.06);
+}
+
+/* Scanline overlay */
+.scanline{
+  position:absolute; inset:0; pointer-events:none;
+  background-image: repeating-linear-gradient(180deg, rgba(0,0,0,0.02) 0 2px, transparent 2px 4px);
+  mix-blend-mode:overlay;
+  opacity:0.6;
+}
+
+/* === Glitch text === */
+.glitch{
+  font-family:var(--font-display);
+  font-size:56px;
+  margin:0; position:relative; letter-spacing:2px;
+  color:#fff;
+  text-transform:uppercase;
+}
+.glitch::before, .glitch::after{
+  content:attr(data-text);
+  position:absolute; left:0; top:0; width:100%;
+  clip-path: inset(0 0 0 0);
+  opacity:0.8;
+}
+.glitch::before{color:var(--accent); transform:translate(2px,-2px); mix-blend-mode:screen; animation:glitch 2.5s infinite linear}
+.glitch::after{color:var(--accent-2); transform:translate(-2px,2px); mix-blend-mode:screen; animation:glitch-2 3.1s infinite linear}
+@keyframes glitch{
+  0%{transform:translate(2px,-2px) skewX(0)}
+  20%{transform:translate(-2px,0) skewX(2deg)}
+  40%{transform:translate(1px,1px) skewX(-1deg)}
+  60%{transform:translate(-1px,-1px) skewX(1deg)}
+  100%{transform:translate(2px,-2px) skewX(0)}
+}
+@keyframes glitch-2{
+  0%{transform:translate(-2px,2px)}
+  25%{transform:translate(3px,1px)}
+  50%{transform:translate(-1px,3px)}
+  75%{transform:translate(2px,-2px)}
+  100%{transform:translate(-2px,2px)}
+}
+
+/* === Sections / grid === */
+.section{max-width:var(--max-width); margin:36px auto; padding:18px}
+.cards-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:18px}
+.card{
+  background:var(--card-bg); border-radius:12px; overflow:hidden; display:flex; flex-direction:column;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  border:1px solid rgba(255,255,255,0.03);
+  transition:transform .28s ease, box-shadow .28s ease;
+}
+.card:hover{transform:translateY(-8px); box-shadow: 0 18px 40px rgba(0,0,0,0.7)}
+.card-media{height:160px; background-size:cover; background-position:center; filter:grayscale(.0) contrast(.95)}
+.card-body{padding:14px}
+.card h3{margin:0 0 8px 0; font-family:var(--font-display); font-size:18px}
+.card p{margin:0 0 12px 0; color:var(--muted); font-size:14px}
+.tags{display:flex; gap:8px}
+.tag{padding:6px 8px; border-radius:8px; background:rgba(255,255,255,0.03); font-size:12px}
+.tag.red{background:linear-gradient(90deg, rgba(211,59,59,0.18), rgba(100,10,10,0.08)); color:var(--accent)}
+
+/* === Killer cards === */
+.dark-slab{background:linear-gradient(180deg, rgba(0,0,0,0.18), transparent); border-radius:12px; padding:20px}
+.killer-row{display:flex; gap:18px; flex-wrap:wrap}
+.killer{flex:1 1 260px; background:rgba(255,255,255,0.03); padding:12px; border-radius:12px; display:flex; gap:12px; align-items:center}
+.portrait{width:96px; height:96px; border-radius:8px; background-size:cover; background-position:center; box-shadow:inset 0 0 20px rgba(0,0,0,0.6)}
+
+/* === Footer === */
+.site-footer{max-width:var(--max-width); margin:26px auto; padding:18px; color:var(--muted); text-align:center}
+
+/* === Responsivo === */
+@media (max-width:900px){
+  .hero{height:260px}
+  .hero-inner{width:100%; padding:22px}
+  .glitch{font-size:32px}
+  .nav{display:none}
+  .site-header{padding:12px; margin:10px}
 }

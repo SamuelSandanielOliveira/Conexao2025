@@ -1,12 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fnaf</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FNAF × Dead by Daylight — Fan-site</title>
+  <!-- Fonte sugerida (Google Fonts) -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Five Nights at Freddy's</h1>
+  <header class="site-header">
+    <div class="logo">Bearhug<span class="accent">•</span></div>
+    <nav class="nav">
+      <a href="#">Home</a>
+      <a href="#animatronics">Animatrônicos</a>
+      <a href="#killers">Killer</a>
+      <a href="#survivors">Sobre</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <h1 class="glitch" data-text="NO ESCURO">NO ESCURO</h1>
+        <p>Misturando corridas no corredor e noites sem saída — fan-site de terror.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#animatronics">Explorar</a>
+          <a class="btn ghost" href="#killers">Rituais & Lendas</a>
+        </div>
+      </div>
+      <div class="scanline"></div>
+    </section>
+
+    <section id="animatronics" class="section cards-grid">
+      <h2>Animatrônicos / Entidades</h2>
+      <div class="card">
+        <div class="card-media" style="background-image:url('placeholder-1.jpg')"></div>
+        <div class="card-body">
+          <h3>Foxy-esque</h3>
+          <p>Salas de vigília, passos no corredor e uma risada que não sai.</p>
+          <div class="tags"><span class="tag red">Perseguição</span><span class="tag">Jump-scare</span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-media" style="background-image:url('placeholder-2.jpg')"></div>
+        <div class="card-body">
+          <h3>The Warden</h3>
+          <p>Caça noturna — deixa marcas e sussurros nas paredes.</p>
+          <div class="tags"><span class="tag">Rastreamento</span><span class="tag">Ambush</span></div>
+        </div>
+      </div>
+      <!-- duplique cards conforme precisar -->
+    </section>
+
+    <section id="killers" class="section dark-slab">
+      <h2>Killer Spotlight</h2>
+      <div class="killer-row">
+        <article class="killer">
+          <div class="portrait" style="background-image:url('killer1.jpg')"></div>
+          <h4>O Guardião</h4>
+          <p>Habilidade: Estilhaço de memória — revela passos por 10s.</p>
+        </article>
+        <article class="killer">
+          <div class="portrait" style="background-image:url('killer2.jpg')"></div>
+          <h4>A Matriarca</h4>
+          <p>Habilidade: Lure — atrai sobreviventes para armadilhas.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="survivors" class="section">
+      <h2>Sobre o Projeto</h2>
+      <p>Fan-made — recursos, macros e trilhas para sessões de RPG / mods.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>Feito por fã • Não comercial • Imagens substitua por suas artes</small>
+  </footer>
 </body>
 </html>
