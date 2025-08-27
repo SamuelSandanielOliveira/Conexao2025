@@ -1,5 +1,6 @@
 body{
   background-color: #000;  
+  color: #fff;
 }
 @font-face {
   font-family: 'Dohrma'; /* The name you'll use in your CSS */
