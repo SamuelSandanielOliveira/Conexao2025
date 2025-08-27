@@ -1,0 +1,10 @@
+body{
+  background-color: #000;  
+}
+@font-face {
+  font-family: 'Dohrma'; /* The name you'll use in your CSS */
+  src: url('../fonts/dohrma-regular.woff2') format('woff2'), /* Path to the font file */
+       url('../fonts/dohrma-regular.woff') format('woff'); /* Provide multiple formats for compatibility */
+  font-weight: normal; /* Or '400' */
+  font-style: normal;
+}
