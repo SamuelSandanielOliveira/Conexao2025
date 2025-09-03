@@ -1,3 +1,4 @@
+## 📄 Declaração de Uso de Imagem
 uma pagena web de Fnaf x Bendy ink 
 
 data incial do projeto 06/08/25
@@ -43,4 +44,5 @@ Plataformas
 Microsoft Windows (na Steam) Android iOS PlayStation VR (apenas dois jogos) Xbox One Xbox XS Nintendo Switch
 
 Personagens Dead by Daylight Escolhidos: A artista, O animatrônico ( Pacote de Franquia), Demogorgon ( Pacote de Franquia),A Legião, Jill Valentine ( Pacote de Franquia), Sable Ward.
+
 
