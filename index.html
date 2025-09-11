@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,55 +13,67 @@
             margin: 0;
             padding: 0;
         }
+
         header {
             background-color: #333;
             padding: 20px;
             text-align: center;
         }
+
         header h1 {
             margin: 0;
             font-size: 3em;
         }
+
         nav {
             background-color: #444;
             padding: 10px;
             text-align: center;
         }
+
         nav a {
             color: white;
             margin: 0 15px;
             text-decoration: none;
         }
+
         nav a:hover {
             text-decoration: underline;
         }
+
         .container {
             padding: 20px;
         }
+
         h2 {
             color: #f2c600;
         }
+
         .game-list {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
             margin-top: 30px;
         }
+
         .game-card {
             background-color: #333;
             padding: 15px;
             border-radius: 10px;
             text-align: center;
         }
+
         .game-card img {
             width: 100%;
             height: auto;
             border-radius: 10px;
         }
+
         .game-card h3 {
             margin-top: 10px;
             color: #f2c600;
         }
+
         footer {
             background-color: #333;
             text-align: center;
@@ -69,97 +82,114 @@
         }
     </style>
 </head>
+
 <body>
 
-<header>
-    <h1>Five Nights at Freddy's</h1>
-    <p>Explore todos os jogos da franquia!</p>
-</header>
+    <header>
+        <h1>Five Nights at Freddy's</h1>
+        <p>Explore todos os jogos da franquia!</p>
+    </header>
 
-<nav>
-    <a href="#">Início</a>
-    <a href="#jogos">Jogos</a>
-    <a href="#sobre">Sobre</a>
-    <a href="#contato">Contato</a>
-</nav>
+    <nav>
+        <a href="#">Início</a>
+        <a href="#jogos">Jogos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+    </nav>
 
-<div class="container" id="jogos">
-    <h2>Jogos da Série Five Nights at Freddy's</h2>
-    <p>A série *Five Nights at Freddy's* tem uma rica história de terror, com vários jogos lançados ao longo dos anos. Aqui estão todos os jogos principais da franquia:</p>
+    <div class="container" id="jogos">
+        <h2>Jogos da Série Five Nights at Freddy's</h2>
+        <p>A série *Five Nights at Freddy's* tem uma rica história de terror, com vários jogos lançados ao longo dos
+            anos. Aqui estão todos os jogos principais da franquia:</p>
 
-    <div class="game-list">
-        <div class="game-card">
-            <img src="frederico.jpg" alt="Five Nights at Freddy's 1">
-            <h3>Five Nights at Freddy's 1</h3>
-            <p>Lançado em 2014, o jogo original começa a história do vigilante noturno em Freddy Fazbear's Pizza.</p>
-        </div>
+        <div class="game-list">
+            <div class="game-card">
+                <a href="/fnaf1.html">
+                    <img src="frederico.jpg" alt="Five Nights at Freddy's 1">
+                </a>
+                <h3>Five Nights at Freddy's 1</h3>
+                <p>Lançado em 2014, o jogo original começa a história do vigilante noturno em Freddy Fazbear's Pizza.
+                </p>
 
-        <div class="game-card">
-            <img src="FNAF_2_picture.webp" alt="Five Nights at Freddy's 2">
-            <h3>Five Nights at Freddy's 2</h3>
-            <p>Lançado em 2014, a sequência trouxe novas mecânicas e mais mistérios sobre o passado da pizzaria.</p>
-        </div>
+            </div>
 
-        <div class="game-card">
-            <img src="/fnaf3.jpg" alt="Five Nights at Freddy's 3">
-            <h3>Five Nights at Freddy's 3</h3>
-            <p>Lançado em 2015, o terceiro jogo leva os jogadores para uma atração de terror baseada no passado de Freddy Fazbear.</p>
-        </div>
+            <div class="game-card">
+                <a href="/fnaf2.html"> 
+                <img src="FNAF_2_picture.webp" alt="Five Nig<hts at Freddy's 2">
+                </a>
+                <h3>Five Nights at Freddy's 2</h3>
+                <p>Lançado em 2014, a sequência trouxe novas mecânicas e mais mistérios sobre o passado da pizzaria.</p>
+            </div>
 
-        <div class="game-card">
-            <img src="/fnaf4.png" alt="Five Nights at Freddy's 4">
-            <h3>Five Nights at Freddy's 4</h3>
-            <p>Lançado em 2015, o jogo explora o terror das noites de infância e os medos mais profundos do protagonista.</p>
-        </div>
+            <div class="game-card">
+                <img src="/fnaf3.jpg" alt="Five Nights at Freddy's 3">
+                <h3>Five Nights at Freddy's 3</h3>
+                <p>Lançado em 2015, o terceiro jogo leva os jogadores para uma atração de terror baseada no passado de
+                    Freddy Fazbear.</p>
+            </div>
 
-        <div class="game-card">
-            <img src="/SuaIrmãLocal.jpg" alt="Five Nights at Freddy's: Sister Location">
-            <h3>Five Nights at Freddy's: Sister Location</h3>
-            <p>Lançado em 2016, traz uma jogabilidade renovada e novos personagens, expandindo o universo de FNaF.</p>
-        </div>
+            <div class="game-card">
+                <img src="/fnaf4.png" alt="Five Nights at Freddy's 4">
+                <h3>Five Nights at Freddy's 4</h3>
+                <p>Lançado em 2015, o jogo explora o terror das noites de infância e os medos mais profundos do
+                    protagonista.</p>
+            </div>
 
-        <div class="game-card">
-            <img src="/pizza simuletor .jpg" alt="Five Nights at Freddy's: Pizzeria Simulator">
-            <h3>Five Nights at Freddy's: Pizzeria Simulator</h3>
-            <p>Lançado em 2017, mistura construção e gestão de uma pizzaria com os famosos elementos de terror.</p>
-        </div>
+            <div class="game-card">
+                <img src="/SuaIrmãLocal.jpg" alt="Five Nights at Freddy's: Sister Location">
+                <h3>Five Nights at Freddy's: Sister Location</h3>
+                <p>Lançado em 2016, traz uma jogabilidade renovada e novos personagens, expandindo o universo de FNaF.
+                </p>
+            </div>
 
-        <div class="game-card">
-            <img src="/Header9.webp" alt="Five Nights at Freddy's: Help Wanted">
-            <h3>Five Nights at Freddy's: Help Wanted</h3>
-            <p>Lançado em 2019, é um jogo de realidade virtual que leva os jogadores diretamente para o mundo de FNaF.</p>
-        </div>
+            <div class="game-card">
+                <img src="/pizza simuletor .jpg" alt="Five Nights at Freddy's: Pizzeria Simulator">
+                <h3>Five Nights at Freddy's: Pizzeria Simulator</h3>
+                <p>Lançado em 2017, mistura construção e gestão de uma pizzaria com os famosos elementos de terror.</p>
+            </div>
 
-        <div class="game-card">
-            <img src="/images.jpg" alt="Five Nights at Freddy's: Help Wanted 2">
-            <h3>Five Nights at Freddy's: Help Wanted 2</h3>
-            <p>Lançado em 2019, é um jogo de realidade virtual que leva os jogadores diretamente para o mundo de FNaF.</p>
-        </div>
+            <div class="game-card">
+                <img src="/Header9.webp" alt="Five Nights at Freddy's: Help Wanted">
+                <h3>Five Nights at Freddy's: Help Wanted</h3>
+                <p>Lançado em 2019, é um jogo de realidade virtual que leva os jogadores diretamente para o mundo de
+                    FNaF.</p>
+            </div>
 
-        <div class="game-card">
-            <img src="/trailer-poster.png.webp" alt="Five Nights at Freddy's: Security Breach">
-            <h3>Five Nights at Freddy's: Security Breach</h3>
-            <p>Lançado em 2021, traz uma nova abordagem em mundo aberto e novas ameaças, além de novos personagens.</p>
+            <div class="game-card">
+                <img src="/images.jpg" alt="Five Nights at Freddy's: Help Wanted 2">
+                <h3>Five Nights at Freddy's: Help Wanted 2</h3>
+                <p>Lançado em 2019, é um jogo de realidade virtual que leva os jogadores diretamente para o mundo de
+                    FNaF.</p>
+            </div>
+
+            <div class="game-card">
+                <img src="/trailer-poster.png.webp" alt="Five Nights at Freddy's: Security Breach">
+                <h3>Five Nights at Freddy's: Security Breach</h3>
+                <p>Lançado em 2021, traz uma nova abordagem em mundo aberto e novas ameaças, além de novos personagens.
+                </p>
+            </div>
         </div>
     </div>
-</div>
 
-<div class="game-card">
-            <img src="/fnafsm.jpg" alt="Five Nights at Freddy's: secret of the mimic">
-            <h3>Five Nights at Freddy's: secret of the mimic</h3>
-            <p>Lançado em 2025, traz uma nova abordagem em mundo aberto e novas ameaças, além de novos personagens.</p>
-        </div>
+    <div class="game-card">
+        <img src="/fnafsm.jpg" alt="Five Nights at Freddy's: secret of the mimic" width="10px" height="10px">
+        <h3>Five Nights at Freddy's: secret of the mimic</h3>
+        <p>Lançado em 2025, traz uma nova abordagem em mundo aberto e novas ameaças, além de novos personagens.</p>
     </div>
-</div>
+    </div>
+    </div>
 
-<div id="sobre" class="container">
-    <h2>Sobre Five Nights at Freddy's</h2>
-    <p>Five Nights at Freddy's é uma franquia de jogos de terror criada por Scott Cawthon. A série é conhecida por sua atmosfera tensa, histórias complexas e criaturas animatrônicas assustadoras. Com diversos jogos lançados ao longo dos anos, a série continua sendo um marco no mundo dos jogos de terror.</p>
-</div>
+    <div id="sobre" class="container">
+        <h2>Sobre Five Nights at Freddy's</h2>
+        <p>Five Nights at Freddy's é uma franquia de jogos de terror criada por Scott Cawthon. A série é conhecida por
+            sua atmosfera tensa, histórias complexas e criaturas animatrônicas assustadoras. Com diversos jogos lançados
+            ao longo dos anos, a série continua sendo um marco no mundo dos jogos de terror.</p>
+    </div>
 
-<footer id="contato">
-    <p>&copy; 2025 Five Nights at Freddy's Fansite. Todos os direitos reservados.</p>
-</footer>
+    <footer id="contato">
+        <p>&copy; 2025 Five Nights at Freddy's Fansite. Todos os direitos reservados.</p>
+    </footer>
 
 </body>
+
 </html
