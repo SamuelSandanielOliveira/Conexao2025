@@ -77,3 +77,24 @@ footer {
 footer p {
     font-size: 14px;
 }
+
+#home {
+    background-image: url('Fnaf1.webp');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+#home h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#home p {
+    font-size: 24px;
+}

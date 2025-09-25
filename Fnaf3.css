@@ -85,3 +85,24 @@ footer {
     padding: 20px;
     margin-top: 40px;
 }
+
+#home {
+    background-image: url('FNaF3_Office.webp');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+#home h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#home p {
+    font-size: 24px;
+}
