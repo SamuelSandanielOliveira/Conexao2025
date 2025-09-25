@@ -6,6 +6,8 @@
 
 body {
     font-family: 'Arial', sans-serif;
+   background-image: url('./FNaF3_Office.webp');
+    background-position: no-repeat;
     background-color: #1a1a1a;
     color: white;
     line-height: 1.6;
@@ -87,7 +89,7 @@ footer {
 }
 
 #home {
-    background-image: url('FNaF3_Office.webp');
+    
     background-size: cover;
     background-position: center;
     height: 400px;

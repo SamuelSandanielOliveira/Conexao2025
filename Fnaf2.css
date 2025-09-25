@@ -7,6 +7,8 @@
 /* Corpo da página */
 body {
     font-family: Arial, sans-serif;
+    background-image: url('./Fnaf2.webp');
+    background-position: no-repeat;
     line-height: 1.6;
     background-color: #333;
     color: white;
@@ -36,9 +38,8 @@ nav ul li a {
 
 /* Seção Hero */
 #home {
-    background-image: url('Fnaf2.webp');
     background-size: cover;
-    background-position: center;
+     background-position: center;
     height: 400px;
     display: flex;
     justify-content: center;
