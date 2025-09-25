@@ -79,7 +79,7 @@ footer p {
 }
 
 #home {
-    background-image: url('Fnaf1.webp');
+    background-image: url('./Fnaf1.webp');
     background-size: cover;
     background-position: center;
     height: 400px;
