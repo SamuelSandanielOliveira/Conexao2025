@@ -6,6 +6,8 @@
 
 body {
     font-family: 'Arial', sans-serif;
+    background-image: url('./Fnaf1.webp');
+    background-position: no-repeat;
     background-color: #111;
     color: #fff;
     line-height: 1.6;
@@ -79,8 +81,6 @@ footer p {
 }
 
 #home {
-    background-image: url('./Fnaf1.webp');
-    background-position: no-repeat;
     background-size: cover;
     background-position: center;
     height: 400px;
