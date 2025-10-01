@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="Fnaf1.css">
 </head>
 <body>
+    <audio id="fnafFundo" autoplay loop muted>
+        <source src="Five Nights at Freddy's 1 Song - The Living Tombstone - The Living Tombstone (youtube).mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <script>
+        const musicaFundo = document.getElementById('fnafFundo');
+        musicaFundo.volume = 0.5; 
+        musicaFundo.muted = false;
+    </script>
     <header>
         <div class="logo">
             <h1>Five Nights at Freddy's 1</h1>
