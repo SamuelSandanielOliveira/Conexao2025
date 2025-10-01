@@ -201,7 +201,20 @@
             sua atmosfera tensa, histórias complexas e criaturas animatrônicas assustadoras. Com diversos jogos lançados
             ao longo dos anos, a série continua sendo um marco no mundo dos jogos de terror.</p>
     </div>
+<button onclick="tocarSom()">Tocar</button>
+<button onclick="pausarSom()">Pausar</button>
 
+<script>
+  const meuSom = new Audio('<iframe width="1310" height="737" src="<iframe width="1310" height="737" src="https://www.youtube.com/embed/l18A5BOTlzE?list=RDl18A5BOTlzE" title="Cinco Noites no Freddy 1 Canção - The Living Tombstone" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>');
+
+  function tocarSom() {
+    meuSom.play();
+  }
+
+  function pausarSom() {
+    meuSom.pause();
+  }
+</script>
     <footer id="contato">
         <p>&copy; 2025 Five Nights at Freddy's Fansite. Todos os direitos reservados.</p>
     </footer>
