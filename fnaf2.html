@@ -7,7 +7,16 @@
     <link rel="stylesheet" href="Fnaf2.css">
 </head>
 <body>
-    <!-- Navbar -->
+    <audio id="fnafFundo" autoplay loop muted>
+        <source src="FNAF SONG  Best Day Ever By MusicbyEarendil COLLAB - Jonlanty (youtube).mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <script>
+        const musicaFundo = document.getElementById('fnafFundo');
+        musicaFundo.volume = 0.5; 
+        musicaFundo.muted = false;
+    </script>
     <nav>
         <ul>
             <li><a href="#home">Início</a></li>

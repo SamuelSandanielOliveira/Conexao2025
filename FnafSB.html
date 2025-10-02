@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="FnafSB.css">
 </head>
 <body>
+    <audio id="fnafFundo" autoplay loop muted>
+        <source src="FNAF SECURITY BREACH SONG (Moving Up In The World) LYRIC VIDEO - DAGames - DAGames (youtube).mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <script>
+        const musicaFundo = document.getElementById('fnafFundo');
+        musicaFundo.volume = 0.5; 
+        musicaFundo.muted = false;
+    </script>
     <header>
         <div class="logo">
             <img src="images/fnaf-logo.png" alt="Five Nights at Freddy's Logo">

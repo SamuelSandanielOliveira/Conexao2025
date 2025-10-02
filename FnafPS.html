@@ -6,6 +6,16 @@
     <title>Five Nights at Freddy's: Pizzeria Simulator</title>
     <link rel="stylesheet" href="FnafPS.css">
 </head>
+<audio id="fnafFundo" autoplay loop muted>
+        <source src="Fnaf6song.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <script>
+        const musicaFundo = document.getElementById('fnafFundo');
+        musicaFundo.volume = 0.5; 
+        musicaFundo.muted = false;
+    </script>
 <header>
         <h1>Five Nights at Freddy's Pizzeria Simulator</h1>
         <nav>

@@ -84,7 +84,16 @@
 </head>
 
 <body>
+    <audio id="fnafFundo" autoplay loop muted>
+        <source src="_IT_S ME_ The 10 Year FNAF Animation Remake [e2ZyJL5UkBM].mp3" type="audio/mpeg" loop>
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
 
+    <script>
+        const musicaFundo = document.getElementById('fnafFundo');
+        musicaFundo.volume = 0.5; 
+        musicaFundo.muted = false;
+    </script>
     <header>
         <h1>Five Nights at Freddy's</h1>
         <p>Explore todos os jogos da franquia!</p>
@@ -201,20 +210,7 @@
             sua atmosfera tensa, histórias complexas e criaturas animatrônicas assustadoras. Com diversos jogos lançados
             ao longo dos anos, a série continua sendo um marco no mundo dos jogos de terror.</p>
     </div>
-<button onclick="tocarSom()">Tocar</button>
-<button onclick="pausarSom()">Pausar</button>
 
-<script>
-  const meuSom = new Audio('<iframe width="1310" height="737" src="<iframe width="1310" height="737" src="https://www.youtube.com/embed/l18A5BOTlzE?list=RDl18A5BOTlzE" title="Cinco Noites no Freddy 1 Canção - The Living Tombstone" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>');
-
-  function tocarSom() {
-    meuSom.play();
-  }
-
-  function pausarSom() {
-    meuSom.pause();
-  }
-</script>
     <footer id="contato">
         <p>&copy; 2025 Five Nights at Freddy's Fansite. Todos os direitos reservados.</p>
     </footer>
