@@ -84,15 +84,19 @@
 </head>
 
 <body>
-     <audio autoplay>
-  <source src="STUCK INSIDE - FNAF MUSIC VIDEO (Living Tombstone, CG5, Black Gryph0n, Baasik, Kevin Foster) - Black Gryph0n (youtube).mp3" type="audio/mpeg">
- </audio>
-
+     <audio id="STUCK">
+      <source src="STUCK INSIDE - FNAF MUSIC VIDEO (Living Tombstone, CG5, Black Gryph0n, Baasik, Kevin Foster) - Black Gryph0n (youtube).mp3" type="audio/mpeg">
+      Seu navegador não suporta esse elemento de áudio
+    </audio>    
     <script>
-        const musicaFundo = document.getElementById('./fnafFundo');
-        musicaFundo.volume = 0.5; 
-        musicaFundo.muted = false;
+      const meuAudio = document.getElementById('guarana');
+      const botaoTocarSom = document.getElementById('tocarGUarana');
+    
+      botaoTocarSom.addEventListener('click', function() {
+        meuAudio.play(); 
+      });
     </script>
+    
     <header>
         <h1>Five Nights at Freddy's</h1>
         <p>Explore todos os jogos da franquia!</p>
