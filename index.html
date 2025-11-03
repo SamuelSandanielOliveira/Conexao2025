@@ -84,18 +84,25 @@
 </head>
 
 <body>
-     <audio id="STUCK">
-      <source src="STUCK INSIDE - FNAF MUSIC VIDEO (Living Tombstone, CG5, Black Gryph0n, Baasik, Kevin Foster) - Black Gryph0n (youtube).mp3" type="audio/mpeg">
-      Seu navegador não suporta esse elemento de áudio
-    </audio>    
-    <script>
-      const meuAudio = document.getElementById('guarana');
-      const botaoTocarSom = document.getElementById('tocarGUarana');
-    
-      botaoTocarSom.addEventListener('click', function() {
-        meuAudio.play(); 
-      });
-    </script>
+    <audio id="musica">
+    <source src="STUCK INSIDE - FNAF MUSIC VIDEO (Living Tombstone, CG5, Black Gryph0n, Baasik, Kevin Foster) - Black Gryph0n (youtube).mp3" type="audio/mpeg">
+    Seu navegador não suporta o elemento de áudio.
+  </audio>
+  <button id="btnPlayPause" onclick="togglePlayPause()" style="width:50px; height:50px; border-radius:0; font-size:24px;">&#9658;</button>
+  <script>
+    const audio = document.getElementById('musica');
+    function togglePlayPause() {
+      if (audio.paused) {
+        audio.loop = true;
+        audio.play();
+        document.getElementById('btnPlayPause').innerHTML = '&#10074;&#10074;'; // Código para pause
+      } else {
+        audio.pause();
+        audio.currentTime = 0;
+        document.getElementById('btnPlayPause').innerHTML = '&#9658;'; // Código para play
+      }
+    }
+  </script>
     
     <header>
         <h1>Five Nights at Freddy's</h1>
