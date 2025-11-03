@@ -553,3 +553,63 @@ if (roxanneWolfLi) {
     bigImgRoxanneWolf.addEventListener("click", playRoxanneWolf);
   }
 }
+
+// --- FUNTIME CHICA ---
+const funtimeChicaLi = document.querySelector('li[data-name="Funtime Chica"]');
+let funtimeChicaAudio = document.getElementById("funtimechica-audio");
+
+if (!funtimeChicaAudio) {
+  funtimeChicaAudio = document.createElement("audio");
+  funtimeChicaAudio.id = "funtimechica-audio";
+  funtimeChicaAudio.src = "FuntimeFreddyVoice.mp3";
+  funtimeChicaAudio.preload = "auto";
+  document.body.appendChild(funtimeChicaAudio);
+}
+
+const playFuntimeChica = () => {
+  try {
+    funtimeChicaAudio.currentTime = 0;
+    funtimeChicaAudio.play().catch(err => {
+      console.warn("Erro ao tentar tocar áudio da Funtime Chica:", err);
+    });
+  } catch (err) {
+    console.warn("Erro Funtime Chica:", err);
+  }
+};
+
+if (funtimeChicaLi) {
+  const bigImgFuntimeChica = funtimeChicaLi.querySelector(":scope > img");
+  if (bigImgFuntimeChica) {
+    bigImgFuntimeChica.addEventListener("click", playFuntimeChica);
+  }
+}
+
+// --- NIGHTMARE CUPCAKE ---
+const nightmareCupcakeLi = document.querySelector('li[data-name="Nightmare Cupcake"]');
+let nightmareCupcakeAudio = document.getElementById("nightmarecupcake-audio");
+
+if (!nightmareCupcakeAudio) {
+  nightmareCupcakeAudio = document.createElement("audio");
+  nightmareCupcakeAudio.id = "nightmarecupcake-audio";
+  nightmareCupcakeAudio.src = "NightmaresVoice.mp3";
+  nightmareCupcakeAudio.preload = "auto";
+  document.body.appendChild(nightmareCupcakeAudio);
+}
+
+const playNightmareCupcake = () => {
+  try {
+    nightmareCupcakeAudio.currentTime = 0;
+    nightmareCupcakeAudio.play().catch(err => {
+      console.warn("Erro ao tentar tocar áudio do Nightmare Cupcake:", err);
+    });
+  } catch (err) {
+    console.warn("Erro Nightmare Cupcake:", err);
+  }
+};
+
+if (nightmareCupcakeLi) {
+  const bigImgNightmareCupcake = nightmareCupcakeLi.querySelector(":scope > img");
+  if (bigImgNightmareCupcake) {
+    bigImgNightmareCupcake.addEventListener("click", playNightmareCupcake);
+  }
+}
